@@ -1,0 +1,70 @@
+{
+	"info": {
+		"_postman_id": "8e7972bb-2eeb-43de-9419-7d0732eddd72",
+		"name": "Karros - GPS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List latest track",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Upload GPS",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "file",
+							"type": "file",
+							"src": "/Users/tuongtang/Downloads/KarrosTech-SWE-Challenge/sample/sample.gpx"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8081/gps",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"gps"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get GPS by ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/gps/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"gps",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
